@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Particles.js Demo</title>
+<style>
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #b61924; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b61924, #b61924); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b61924, #b61924); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .signature {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            font-size: 48px;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+</style>
+</head>
+<body>
+<div id="particles-js"></div>
+
+<script src="node_modules/particles.js/particles.js"></script>
+<div class="signature">ramadbes was here</div>
+<script>
+  particlesJS.load('particles-js', 'node_modules/particles.js/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
+</body>
+</html>
